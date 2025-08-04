@@ -1,0 +1,144 @@
+2025-08-04 12:04:47,753 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:05:18,494 - INFO - Fetching content from: https://jobs.dlr.de/default/job/Entwicklungsingenieurin-%28wmd%29-Softwaretechnologien-im-Raumsegment/2469-de_DE
+2025-08-04 12:05:18,777 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:05:18,779 - INFO - Searching for posting date in page content...
+2025-08-04 12:05:18,915 - WARNING - No posting date found in page content
+2025-08-04 12:05:18,915 - WARNING - Could not find posting date on this page. The job might be very new or the site format is not supported.
+2025-08-04 12:06:17,909 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:06:20,466 - INFO - Fetching content from: https://jobs.neura-robotics.com/offer/ai-data-engineer-human/31ce9890-86bd-4b41-94b2-959fe6b99c5a?showApplicationForm=false
+2025-08-04 12:06:20,765 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:06:20,766 - INFO - Searching for posting date in page content...
+2025-08-04 12:06:20,767 - INFO - Found date in JSON-LD: 2025-07-30T00:00:00+02:00
+2025-08-04 12:06:20,769 - INFO - Successfully parsed date: 2025-07-30 00:00:00+02:00
+2025-08-04 12:06:20,769 - INFO - Job posted 5 days ago
+2025-08-04 12:07:14,666 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:07:16,541 - INFO - Fetching content from: https://job.deloitte.com/job-consultant-audit-mwd-_48965
+2025-08-04 12:07:18,904 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:07:18,905 - INFO - Searching for posting date in page content...
+2025-08-04 12:07:19,900 - WARNING - No posting date found in page content
+2025-08-04 12:07:19,901 - WARNING - Could not find posting date on this page. The job might be very new or the site format is not supported.
+2025-08-04 12:11:00,395 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:11:14,245 - INFO - Fetching content from: https://job.deloitte.com/job-consultant-audit-mwd-_48965
+2025-08-04 12:11:16,011 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:11:16,012 - INFO - Searching for posting date in page content...
+2025-08-04 12:11:16,014 - INFO - Found date in meta tag: Fri, 25 Jul 2025 16:53:25 +0200
+2025-08-04 12:11:16,015 - INFO - Successfully parsed date: 2025-07-25 16:53:25+02:00
+2025-08-04 12:11:16,015 - INFO - Job posted 10 days ago
+2025-08-04 12:11:58,450 - INFO - Fetching content from: https://jobs.kpmg.de/job/Augsburg-%28Junior%29-Consultant-Berater-f%C3%BCr-Tax-Steuerberatung-%28wmd%29-86157/571778601/?feedId=289301
+2025-08-04 12:11:58,755 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:11:58,757 - INFO - Searching for posting date in page content...
+2025-08-04 12:11:58,757 - INFO - Found date in meta tag: Sun Jul 13 02:00:00 UTC 2025
+2025-08-04 12:11:58,758 - INFO - Successfully parsed date: 2025-07-13 02:00:00+00:00
+2025-08-04 12:11:58,758 - INFO - Job posted 22 days ago
+2025-08-04 12:13:07,681 - INFO - Fetching content from: https://www.keba.com/de/corporate/career/details?job=2215
+2025-08-04 12:13:08,001 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:13:08,003 - INFO - Searching for posting date in page content...
+2025-08-04 12:13:08,322 - INFO - Found date in text: 2025-07-11T14:06:58
+2025-08-04 12:13:08,323 - INFO - Successfully parsed date: 2025-07-11 14:06:58
+2025-08-04 12:13:08,323 - INFO - Job posted 24 days ago
+2025-08-04 12:14:14,010 - INFO - Fetching content from: https://www.rwth-aachen.de/go/id/kbag/file/V000009994/
+2025-08-04 12:14:16,179 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:14:16,180 - INFO - Searching for posting date in page content...
+2025-08-04 12:14:16,321 - INFO - Found date in text: 2025-08-31
+2025-08-04 12:14:16,322 - INFO - Successfully parsed date: 2025-08-31 00:00:00
+2025-08-04 12:14:16,322 - INFO - Job posted -27 days ago
+2025-08-04 12:14:16,323 - INFO - Analysis complete. Recommendation: Job posting is from the future (27 days ahead) - likely a fresh posting!
+2025-08-04 12:15:48,501 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:16:51,692 - INFO - No URL provided by user or user cancelled. Exiting.
+2025-08-04 12:19:30,896 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:19:39,096 - INFO - Fetching content from: https://www.rwth-aachen.de/go/id/kbag/file/V000009994/
+2025-08-04 12:19:40,387 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:19:40,388 - INFO - Searching for posting date in page content...
+2025-08-04 12:19:40,392 - INFO - Selected past date: 2025-08-04T00:00:00 (0 days ago)
+2025-08-04 12:19:40,392 - INFO - Found date in meta tag: 2025-08-04T00:00:00 (original: D:20250804000000+01)
+2025-08-04 12:19:40,392 - INFO - Successfully parsed date: 2025-08-04 00:00:00
+2025-08-04 12:19:40,393 - INFO - Job posted 0 days ago
+2025-08-04 12:20:52,130 - INFO - Fetching content from: https://www.dalux.com/careers/job/?hr=show-job/273245&locale=en_US&forcereferrer=https://dalux.com/
+2025-08-04 12:20:52,285 - ERROR - HTTP error occurred: 403 Client Error: Forbidden for url: https://www.dalux.com/careers/job/?hr=show-job/273245&locale=en_US&forcereferrer=https://dalux.com/
+2025-08-04 12:20:52,286 - ERROR - Failed to fetch page content. Please check the URL and try again.
+2025-08-04 12:22:32,691 - INFO - No URL provided by user or user cancelled. Exiting.
+2025-08-04 12:22:37,215 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:22:42,457 - INFO - Fetching content from: https://www.dalux.com/careers/job/?hr=show-job/273245&locale=en_US&forcereferrer=https://dalux.com/
+2025-08-04 12:22:42,613 - ERROR - HTTP error occurred: 403 Client Error: Forbidden for url: https://www.dalux.com/careers/job/?hr=show-job/273245&locale=en_US&forcereferrer=https://dalux.com/
+2025-08-04 12:22:42,613 - ERROR - Failed to fetch page content. Please check the URL and try again.
+2025-08-04 12:22:47,250 - INFO - No URL provided by user or user cancelled. Exiting.
+2025-08-04 12:23:11,437 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:23:14,316 - INFO - Fetching content from: https://jobs.fraunhofer.de/job/Duisburg-Projektleiterin-K%C3%BCnstliche-Intelligenz-47057/1163034101/
+2025-08-04 12:23:14,578 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:23:14,579 - INFO - Searching for posting date in page content...
+2025-08-04 12:23:14,583 - INFO - Selected past date: Tue Jul 15 02:00:00 UTC 2025 (20 days ago)
+2025-08-04 12:23:14,584 - INFO - Found date in meta tag: Tue Jul 15 02:00:00 UTC 2025 (original: Tue Jul 15 02:00:00 UTC 2025)
+2025-08-04 12:23:14,584 - INFO - Successfully parsed date: 2025-07-15 02:00:00+00:00
+2025-08-04 12:23:14,585 - INFO - Job posted 20 days ago
+2025-08-04 12:32:18,361 - INFO - Database initialized successfully
+2025-08-04 12:32:18,362 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:33:28,556 - INFO - Fetching content from: https://jobs.ashbyhq.com/sereact/1aff543c-4ba9-4445-a774-0e879816f9b4
+2025-08-04 12:33:28,718 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:33:28,719 - INFO - Searching for posting date in page content...
+2025-08-04 12:33:28,726 - INFO - Selected past date: 2025-04-29 (97 days ago)
+2025-08-04 12:33:28,726 - INFO - Found date in JSON-LD: 2025-04-29 (original: 2025-04-29)
+2025-08-04 12:33:28,727 - INFO - Successfully parsed date: 2025-04-29 00:00:00
+2025-08-04 12:33:28,727 - INFO - Job posted 97 days ago
+2025-08-04 12:33:28,727 - INFO - Starting skills analysis for: https://jobs.ashbyhq.com/sereact/1aff543c-4ba9-4445-a774-0e879816f9b4
+2025-08-04 12:33:28,746 - INFO - Extracted job content: 46 characters
+2025-08-04 12:33:28,775 - INFO - Found 1 technical skills
+2025-08-04 12:33:28,791 - INFO - Saved job posting and 1 skills to database
+2025-08-04 12:33:28,792 - INFO - Skills analysis completed: 1 skills found
+2025-08-04 12:33:46,836 - INFO - Generating skills analytics...
+2025-08-04 12:33:50,755 - INFO - Summary report saved to analytics/skills_summary_report.txt
+2025-08-04 12:33:50,757 - INFO - Analytics generated successfully in analytics/
+2025-08-04 12:38:17,267 - INFO - Database initialized successfully
+2025-08-04 12:38:17,268 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:38:20,546 - INFO - Fetching content from: https://jobs.ashbyhq.com/sereact/1aff543c-4ba9-4445-a774-0e879816f9b4
+2025-08-04 12:38:21,197 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:38:21,198 - INFO - Searching for posting date in page content...
+2025-08-04 12:38:21,202 - INFO - Selected past date: 2025-04-29 (97 days ago)
+2025-08-04 12:38:21,203 - INFO - Found date in JSON-LD: 2025-04-29 (original: 2025-04-29)
+2025-08-04 12:38:21,203 - INFO - Successfully parsed date: 2025-04-29 00:00:00
+2025-08-04 12:38:21,203 - INFO - Job posted 97 days ago
+2025-08-04 12:38:21,204 - INFO - Starting skills analysis for: https://jobs.ashbyhq.com/sereact/1aff543c-4ba9-4445-a774-0e879816f9b4
+2025-08-04 12:38:21,232 - INFO - Extracted job content: 0 characters from 0 sections
+2025-08-04 12:38:21,233 - WARNING - No job content extracted
+2025-08-04 12:38:29,587 - INFO - Fetching content from: https://jobs.ashbyhq.com/sereact/1aff543c-4ba9-4445-a774-0e879816f9b4
+2025-08-04 12:38:29,675 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:38:29,676 - INFO - Searching for posting date in page content...
+2025-08-04 12:38:29,680 - INFO - Selected past date: 2025-04-29 (97 days ago)
+2025-08-04 12:38:29,680 - INFO - Found date in JSON-LD: 2025-04-29 (original: 2025-04-29)
+2025-08-04 12:38:29,681 - INFO - Successfully parsed date: 2025-04-29 00:00:00
+2025-08-04 12:38:29,681 - INFO - Job posted 97 days ago
+2025-08-04 12:38:29,682 - INFO - Starting skills analysis for: https://jobs.ashbyhq.com/sereact/1aff543c-4ba9-4445-a774-0e879816f9b4
+2025-08-04 12:38:29,698 - INFO - Extracted job content: 0 characters from 0 sections
+2025-08-04 12:38:29,699 - WARNING - No job content extracted
+2025-08-04 12:39:00,580 - INFO - Fetching content from: https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670
+2025-08-04 12:39:01,240 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:39:01,241 - INFO - Searching for posting date in page content...
+2025-08-04 12:39:01,245 - INFO - Selected past date: 2025-07-30T00:00:00+02:00 (5 days ago)
+2025-08-04 12:39:01,246 - INFO - Found date in JSON-LD: 2025-07-30T00:00:00+02:00 (original: 2025-07-30T00:00:00+02:00)
+2025-08-04 12:39:01,246 - INFO - Successfully parsed date: 2025-07-30 00:00:00+02:00
+2025-08-04 12:39:01,247 - INFO - Job posted 5 days ago
+2025-08-04 12:39:01,247 - INFO - Starting skills analysis for: https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670
+2025-08-04 12:39:01,435 - INFO - Extracted job content: 0 characters from 0 sections
+2025-08-04 12:39:01,435 - WARNING - No job content extracted
+2025-08-04 12:39:09,478 - INFO - User chose not to check another URL. Exiting.
+2025-08-04 12:50:43,669 - INFO - Starting Job Posting Date Checker application
+2025-08-04 12:50:43,672 - INFO - Database initialized successfully
+2025-08-04 12:50:43,673 - INFO - Starting interactive job posting analysis
+2025-08-04 12:50:50,121 - INFO - Starting analysis of job posting: https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670
+2025-08-04 12:50:50,121 - INFO - Fetching content from: https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670
+2025-08-04 12:50:50,430 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:50:50,431 - ERROR - Error analyzing job posting https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670: 'DateExtractor' object has no attribute 'find_posting_date'
+2025-08-04 12:50:58,109 - INFO - User cancelled the analysis
+2025-08-04 12:50:58,110 - INFO - Interactive analysis session ended
+2025-08-04 12:50:58,110 - INFO - Job Posting Date Checker application ended
+2025-08-04 12:51:11,332 - INFO - Database initialized successfully
+2025-08-04 12:51:11,333 - INFO - Starting Job Posting Date Checker...
+2025-08-04 12:51:15,532 - INFO - Fetching content from: https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670
+2025-08-04 12:51:15,795 - INFO - Successfully fetched page content. Status code: 200
+2025-08-04 12:51:15,796 - INFO - Searching for posting date in page content...
+2025-08-04 12:51:15,803 - INFO - Selected past date: 2025-07-30T00:00:00+02:00 (5 days ago)
+2025-08-04 12:51:15,804 - INFO - Found date in JSON-LD: 2025-07-30T00:00:00+02:00 (original: 2025-07-30T00:00:00+02:00)
+2025-08-04 12:51:15,804 - INFO - Successfully parsed date: 2025-07-30 00:00:00+02:00
+2025-08-04 12:51:15,805 - INFO - Job posted 5 days ago
+2025-08-04 12:51:15,805 - INFO - Starting skills analysis for: https://jobs.neura-robotics.com/offer/mlops-engineer-human/1d4ddfe1-a6c5-4096-9ca8-51bf86c06670
+2025-08-04 12:51:15,966 - INFO - Extracted job content: 0 characters from 0 sections
+2025-08-04 12:51:15,967 - WARNING - No job content extracted

@@ -1,0 +1,13 @@
+JOB SKILLS ANALYSIS REPORT
+==================================================
+
+Report Generated: 2025-08-04 12:33:50
+
+TOP 15 MOST IN-DEMAND SKILLS:
+------------------------------
+ 1. javascript           | Occurrences:   1 | Jobs:   1 | Avg/Job:  1.0
+
+
+TOTAL UNIQUE SKILLS TRACKED: 1
+TOTAL SKILL MENTIONS: 1
+TOTAL JOBS ANALYZED: 1

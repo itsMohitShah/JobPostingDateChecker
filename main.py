@@ -9,6 +9,7 @@ import json
 import re
 from urllib.parse import urlparse
 import sys
+from skills_analyzer import SkillsAnalyzer
 
 # Configure logging
 logging.basicConfig(
@@ -25,6 +26,7 @@ class JobPostingDateChecker:
     def __init__(self):
         self.today = datetime.date.today()
         self.max_age_days = 7  # Don't apply if older than a week
+        self.skills_analyzer = SkillsAnalyzer()  # Initialize skills analyzer
         
         # Multiple patterns to search for date fields
         self.date_field_patterns = [
@@ -405,9 +407,19 @@ class JobPostingDateChecker:
         else:
             return False, f"❌ Don't apply. Job is too old ({days_since_posted} days old, max recommended: {self.max_age_days} days)"
 
-    def display_results(self, url, date_info, parsed_date, days_since_posted, should_apply_result):
+    def display_results(self, url, date_info, parsed_date, days_since_posted, should_apply_result, content=None):
         """Display results to user"""
         recommendation, reason = should_apply_result
+        
+        # Analyze skills if content is provided
+        skills_analysis = None
+        if content and date_info:
+            try:
+                skills_analysis = self.skills_analyzer.analyze_job_posting(
+                    url, content, date_info['date']
+                )
+            except Exception as e:
+                logger.warning(f"Skills analysis failed: {e}")
         
         result_message = f"""
 Job Posting Analysis Results:
@@ -420,8 +432,19 @@ Job Posting Analysis Results:
 🗓️ Parsed Date: {parsed_date if parsed_date else 'Could not parse'}
 ⏰ Days Since Posted: {days_since_posted if days_since_posted is not None else 'Unknown'}
 
-🎯 RECOMMENDATION: {reason}
-"""
+🎯 RECOMMENDATION: {reason}"""
+
+        # Add skills analysis to results
+        if skills_analysis:
+            result_message += f"""
+
+🔧 SKILLS ANALYSIS:
+Company: {skills_analysis['company']}
+Position: {skills_analysis['job_title']}
+Technical Skills Found: {skills_analysis['skills_found']}
+Total Skill Mentions: {skills_analysis['total_mentions']}
+
+Top Skills: {', '.join(skills_analysis['skills'][:10]) if skills_analysis['skills'] else 'None found'}"""
         
         print(result_message)
         logger.info(f"Analysis complete. Recommendation: {reason}")
@@ -431,6 +454,15 @@ Job Posting Analysis Results:
         root.withdraw()
         messagebox.showinfo("Job Posting Analysis Results", result_message)
         
+        # Ask about generating analytics
+        if skills_analysis:
+            show_analytics = messagebox.askyesno(
+                "Generate Analytics?", 
+                "Would you like to generate skills analytics charts from all analyzed jobs?"
+            )
+            if show_analytics:
+                self.generate_and_show_analytics()
+        
         # Ask if user wants to check another URL
         check_another = messagebox.askyesno(
             "Check Another URL?", 
@@ -439,6 +471,44 @@ Job Posting Analysis Results:
         root.destroy()
         
         return check_another
+
+    def generate_and_show_analytics(self):
+        """Generate analytics and show results"""
+        try:
+            logger.info("Generating skills analytics...")
+            analytics_result = self.skills_analyzer.generate_analytics()
+            
+            if analytics_result:
+                # Show trending skills
+                trending = self.skills_analyzer.get_trending_skills(15)
+                
+                trending_message = "📊 TOP TRENDING SKILLS:\n" + "━" * 30 + "\n"
+                for i, skill in enumerate(trending[:10], 1):
+                    trending_message += f"{i:2d}. {skill['skill_name']:15} | Jobs: {skill['total_jobs']:2d} | Mentions: {skill['total_occurrences']:3d}\n"
+                
+                trending_message += f"\n📈 Analytics saved to: analytics/\n"
+                trending_message += f"📈 Total Jobs Analyzed: {analytics_result['total_jobs']}\n"
+                trending_message += f"📈 Unique Companies: {analytics_result['unique_companies']}\n"
+                trending_message += f"📈 Total Skills Tracked: {analytics_result['total_skills']}"
+                
+                root = tk.Tk()
+                root.withdraw()
+                messagebox.showinfo("Skills Analytics Generated!", trending_message)
+                root.destroy()
+                
+                logger.info("Analytics generated and displayed successfully")
+            else:
+                root = tk.Tk()
+                root.withdraw()
+                messagebox.showwarning("Analytics Error", "Could not generate analytics. Please check the logs.")
+                root.destroy()
+                
+        except Exception as e:
+            logger.error(f"Error in generate_and_show_analytics: {e}")
+            root = tk.Tk()
+            root.withdraw()
+            messagebox.showerror("Analytics Error", f"Error generating analytics: {e}")
+            root.destroy()
 
     def run(self):
         """Main execution function"""
@@ -514,7 +584,7 @@ Job Posting Analysis Results:
                 should_apply_result = self.should_apply(days_since_posted)
                 
                 # Display results and ask if user wants to check another URL
-                check_another = self.display_results(url, date_info, parsed_date, days_since_posted, should_apply_result)
+                check_another = self.display_results(url, date_info, parsed_date, days_since_posted, should_apply_result, content)
                 
                 if not check_another:
                     logger.info("User chose not to check another URL. Exiting.")
